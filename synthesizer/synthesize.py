@@ -3,6 +3,7 @@ from torch.utils.data import DataLoader
 from synthesizer.synthesizer_dataset import SynthesizerDataset, collate_synthesizer
 from synthesizer.models.tacotron import Tacotron
 from synthesizer.utils.text import text_to_sequence
+from synthesizer.utils import ValueWindow, data_parallel_workaround
 from synthesizer.utils.symbols import symbols
 import numpy as np
 from pathlib import Path
