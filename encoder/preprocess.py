@@ -94,6 +94,7 @@ def _preprocess_speaker_dirs(speaker_dirs, dataset_name, datasets_root, out_dir,
                 continue
                 
             # Load and preprocess the waveform
+            print ("process file:{}".format(in_fpath))
             wav = audio.preprocess_wav(in_fpath)
             if len(wav) == 0:
                 continue
